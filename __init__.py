@@ -1,4 +1,6 @@
-from arbitrator.root import app
+from mindmeld import Application
+import handlers
 
-# import modules containing dialogue handlers
-import arbitrator.handlers
+app = Application(__name__)
+
+
