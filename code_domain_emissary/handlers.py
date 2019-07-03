@@ -1,4 +1,6 @@
-from . import app
+from mindmeld import Application
+
+app = Application(__name__)
 
 
 @app.handle(intent='greet')
