@@ -7,7 +7,16 @@ if __name__ == '__main__':
     nlp.build()
 
     res1 = nlp.process("hello")
-    assert res1.get("intent") == "create_element"
+    assert res1.get("intent") == "greet"
 
     res2 = nlp.process("bye")
-    assert res2.get("intent") == "delete_element"
+    try:
+        assert res2.get("intent") == "exit"
+    except AssertionError:
+        print("Did not match intent: {}".format(res2.get("intent")))
+
+    res3 = nlp.process("how")
+    try:
+        assert res3.get("intent") == "confused"
+    except AssertionError:
+        print("Did not match intent: {}".format(res2.get("intent")))
