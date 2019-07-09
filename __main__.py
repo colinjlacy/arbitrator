@@ -1,3 +1,5 @@
+from code_domain_emissary.emissary import Emissary
+
 if __name__ == '__main__':
-    from code_domain_emissary.handlers import app
-    app.cli()
+    em = Emissary()
+    em.process("hello")
