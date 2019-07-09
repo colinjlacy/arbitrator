@@ -7,7 +7,7 @@ requirements = ["mindmeld>=4.1.1"]
 
 setup(
     name="CodeDomainEmissary",
-    version="0.0.1.dev0",
+    version="0.0.1.dev1",
     author="Colin Lacy",
     author_email="colinjlacy@gmail.com",
     description="A package to adapt text to code domain intents and entities",
