@@ -1,4 +1,0 @@
-import code_domain_emissary.handlers.edit_element
-import code_domain_emissary.handlers.delete_element
-import code_domain_emissary.handlers.create_element
-import code_domain_emissary.handlers.default
