@@ -1,8 +1,7 @@
-import en_core_web_sm
+from code_domain_emissary.emissary import Emissary
 
 if __name__ == '__main__':
-    nlp = en_core_web_sm.load()
-    doc = nlp(u"Apple is looking at buying U.K. startup vacuum downtown for $1 billion")
-    for chunk in doc.cats:
-        print(chunk)
+    em = Emissary()
+    doc = em.process("My name is Colin")
+    print(doc)
 
